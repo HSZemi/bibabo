@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+
+.adenauer .bar {
+  fill: steelblue;
+}
+.nuss .bar {
+  fill: mediumseagreen;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis--x path {
+  display: none;
+}
+
+.diagram-1 {
+	height: 400px;
+}
+.diagram-2 {
+	height: 180px;
+}
+.diagram-3 {
+	height: 150px;
+}
+
+.diagram-1,
+.diagram-2,
+.diagram-3{
+	padding: 0;
+}
+
+</style>
+
+
+<div class="container-fluid">
+
+	<div class="row">
+
+		<div class="col-lg-6 adenauer">
+		<h2>Adenauerallee</h2>
+
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-sm-12">
+						Heute
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-1" id="diagram-adenauer-today">
+						<!--diagram-8-->
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-sm-12">
+						Letzte Woche
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-2" id="diagram-adenauer-minus-seven">
+						<!--diagram-4-->
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-sm-12">
+						Gestern
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-2" id="diagram-adenauer-minus-one">
+						<!--diagram-4-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="row">
+						<div class="col-sm-12 title-minus-two">
+						Titel
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-3" id="diagram-adenauer-minus-two">
+						<!--diagram-1/5-->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="row">
+						<div class="col-sm-12 title-minus-three">
+						Titel
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-3" id="diagram-adenauer-minus-three">
+						<!--diagram-1/5-->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="row">
+						<div class="col-sm-12 title-minus-four">
+						Titel
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-3" id="diagram-adenauer-minus-four">
+						<!--diagram-1/5-->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="row">
+						<div class="col-sm-12 title-minus-five">
+						Titel
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-3" id="diagram-adenauer-minus-five">
+						<!--diagram-1/5-->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="row">
+						<div class="col-sm-12 title-minus-six">
+						Titel
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-3" id="diagram-adenauer-minus-six">
+						<!--diagram-1/5-->
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		
+		
+		
+
+		<div class="col-lg-6 nuss">
+		<h2>Nussallee</h2>
+
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-sm-12">
+						Heute
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-1" id="diagram-nuss-today">
+						<!--diagram-8-->
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-sm-12">
+						Letzte Woche
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-2" id="diagram-nuss-minus-seven">
+						<!--diagram-4-->
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-sm-12">
+						Gestern
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-2" id="diagram-nuss-minus-one">
+						<!--diagram-4-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="row">
+						<div class="col-sm-12 title-minus-two">
+						Titel
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-3" id="diagram-nuss-minus-two">
+						<!--diagram-1/5-->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="row">
+						<div class="col-sm-12 title-minus-three">
+						Titel
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-3" id="diagram-nuss-minus-three">
+						<!--diagram-1/5-->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="row">
+						<div class="col-sm-12 title-minus-four">
+						Titel
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-3" id="diagram-nuss-minus-four">
+						<!--diagram-1/5-->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="row">
+						<div class="col-sm-12 title-minus-five">
+						Titel
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-3" id="diagram-nuss-minus-five">
+						<!--diagram-1/5-->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="row">
+						<div class="col-sm-12 title-minus-six">
+						Titel
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 diagram-3" id="diagram-nuss-minus-six">
+						<!--diagram-1/5-->
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+
+	</div>
+
+</div>
+
+
+
+
+
+<script src="js/d3.v4.min.js"></script>
+<script>
+
+function dateString(d){
+	let year = d.getFullYear();
+	let month = d.getMonth() + 1;
+	let date = d.getDate();
+
+	if(month < 10){
+		month = "0"+month;
+	}
+	if(date < 10){
+		date = "0"+date;
+	}
+	return ""+year+"-"+month+"-"+date;
+}
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+var ids = ["today","minus-one","minus-two","minus-three","minus-four","minus-five","minus-six","minus-seven"];
+var days = ["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"];
+
+for(let day = 0; day <= 7; day++){
+	let selectedDay = new Date(Date.now() - 1000*60*60*24*day);
+	d3.json("bridge.php?day="+dateString(selectedDay), function(error, rawdata) {
+		if (error) throw error;
+		
+		let gebaeudevalues = ["Adenauerallee","Nussallee"];
+		let alldata = {"Adenauerallee":[],"Nussallee":[]};
+		
+		let max_y = 0;
+		
+		let timeset = {"Adenauerallee":["8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23"],"Nussallee":["8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]};
+		
+		for(let i = 0; i < rawdata.length; i++){
+			rawdata[i].clients = parseInt(rawdata[i].clients);
+			max_y = Math.max(max_y,rawdata[i].clients);
+			alldata[rawdata[i].gebaeude].push(rawdata[i]);
+			let k = timeset[rawdata[i].gebaeude].indexOf(rawdata[i].stunde);
+			if(k != -1) {
+				timeset[rawdata[i].gebaeude].splice(k, 1);
+			}
+		}
+		for(let g=0; g<gebaeudevalues.length; g++){
+			for(let i = 0; i < timeset[gebaeudevalues[g]].length; i++){
+				alldata[gebaeudevalues[g]].push({"clients":"0","gebaeude":g,"stunde":timeset[gebaeudevalues[g]][i]});
+			}
+		}
+		
+		let id1 = "#diagram-adenauer-"+ids[day];
+		let id2 = "#diagram-nuss-"+ids[day];
+		
+		let class_title = ".title-"+ids[day];
+		let title = days[selectedDay.getDay()];
+		
+		d3.selectAll(class_title).text(title);
+		
+		
+		drawDiagram(id1, alldata.Adenauerallee, max_y);
+		drawDiagram(id2, alldata.Nussallee, max_y);
+	});
+}
+});
+
+function drawDiagram(svg_id, data, max_y){
+
+max_y = 550;
+
+let div = d3.select(svg_id),
+    divdimensions = div.node().getBoundingClientRect(),
+    svg = div.append("svg:svg"),
+    margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = +divdimensions.width - margin.left - margin.right,
+    height = +divdimensions.height - margin.top - margin.bottom;
+    
+    
+    svg.attr("width", divdimensions.width)
+       .attr("height", divdimensions.height);
+       
+       
+       
+
+let x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+    y = d3.scaleLinear().rangeRound([height, 0]);
+
+let g = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+  x.domain(data.map(function(d) { return d.stunde; }));
+  y.domain([0, max_y]);
+
+  g.append("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+  g.append("g")
+      .attr("class", "axis axis--y")
+      .call(d3.axisLeft(y))
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", "0.71em")
+      .attr("text-anchor", "end")
+      .text("Frequency");
+
+  g.selectAll(".bar")
+    .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.stunde); })
+      .attr("y", function(d) { return y(d.clients); })
+      .attr("width", x.bandwidth())
+      .attr("height", function(d) { return height - y(d.clients); });
+}
+
+</script>
